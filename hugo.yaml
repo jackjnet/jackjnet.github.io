@@ -13,8 +13,8 @@ params:
     enabled: true
     title: "Jack Jarosz" # optional default will be site title
     imageUrl: "https://www.gravatar.com/avatar/344c617030a63834eef84376436c5ba4?size=256" # optional
-    imageWidth: 120 # custom size
-    imageHeight: 120 # custom size
+    imageWidth: 256 # custom size
+    imageHeight: 256 # custom size
     buttons:
 
   socialIcons: # optional
