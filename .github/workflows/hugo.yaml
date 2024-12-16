@@ -1,10 +1,6 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
-variables:
-   name: HUGO_VERSION
-   value: latest
-
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -40,6 +36,7 @@ jobs:
     steps:
       - name: Install Hugo CLI
         run: |
+          HUGO_VERSION="latest"
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
